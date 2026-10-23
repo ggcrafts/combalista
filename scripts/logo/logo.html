@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<!-- Logo do canal CombaLista: a balista que anda (Walking Ballista) como um Constructo de aço
+     prateado (placas rebitadas, engrenagem, núcleo brilhando, pernas articuladas) + nome.
+     Gerado em PNG por scripts/gerar-logo.ts (?modo=logo | ?modo=icone). -->
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800;900&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; background: transparent; }
+  /* tela do tamanho exato do PNG, logo centralizado */
+  body { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
+  .logo { display: inline-flex; align-items: center; gap: 34px; padding: 30px 46px 30px 30px; }
+  .icon { display: inline-block; padding: 24px; }
+  .word { font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 132px; line-height: 0.9; letter-spacing: -2px; white-space: nowrap; }
+  /* prata: claro em cima, aço no meio (via cor sólida + sombras, sem gradiente em texto) */
+  .word .a { color: #F4F6F9; text-shadow: 0 2px 0 #FFFFFF, 0 6px 0 #3A3F47, 0 8px 18px rgba(0,0,0,.55); }
+  .word .b { color: #AEB5C0; text-shadow: 0 2px 0 #E3E7ED, 0 6px 0 #2B2F36, 0 0 26px rgba(127,227,255,.22), 0 8px 18px rgba(0,0,0,.55); }
+  .tag { margin-top: 14px; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: 26px; letter-spacing: 9px; color: #9AA3AF; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <!-- aço prateado -->
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F9FC" />
+      <stop offset="0.3" stop-color="#C9CFD8" />
+      <stop offset="0.55" stop-color="#7A818C" />
+      <stop offset="0.75" stop-color="#B9C0CA" />
+      <stop offset="1" stop-color="#E6EAF0" />
+    </linearGradient>
+    <linearGradient id="steelSide" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6E7580" />
+      <stop offset="0.5" stop-color="#E9EDF2" />
+      <stop offset="1" stop-color="#6E7580" />
+    </linearGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E333B" />
+      <stop offset="1" stop-color="#14171C" />
+    </linearGradient>
+    <radialGradient id="core">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="0.4" stop-color="#7FE3FF" />
+      <stop offset="1" stop-color="#7FE3FF" stop-opacity="0" />
+    </radialGradient>
+    <symbol id="emblem" viewBox="0 0 240 240">
+      <!-- placa octogonal rebitada -->
+      <polygon points="74,8 166,8 232,74 232,166 166,232 74,232 8,166 8,74" fill="url(#plate)" stroke="url(#steel)" stroke-width="8" stroke-linejoin="round" />
+      <polygon points="80,22 160,22 218,80 218,160 160,218 80,218 22,160 22,80" fill="none" stroke="#8A919C" stroke-opacity=".45" stroke-width="2" />
+      <g fill="url(#steel)" stroke="#2B2F36" stroke-width="1">
+        <circle cx="120" cy="15" r="4" /><circle cx="120" cy="225" r="4" /><circle cx="15" cy="120" r="4" /><circle cx="225" cy="120" r="4" />
+        <circle cx="42" cy="42" r="4" /><circle cx="198" cy="42" r="4" /><circle cx="42" cy="198" r="4" /><circle cx="198" cy="198" r="4" />
+      </g>
+      <!-- engrenagem atrás do corpo -->
+      <g transform="translate(120 128)" fill="#3A3F47" stroke="#5D646F" stroke-width="2">
+        <circle r="40" />
+        <g fill="#3A3F47">
+          <rect x="-7" y="-52" width="14" height="16" rx="2" /><rect x="-7" y="36" width="14" height="16" rx="2" />
+          <rect x="-52" y="-7" width="16" height="14" rx="2" /><rect x="36" y="-7" width="16" height="14" rx="2" />
+          <rect x="-7" y="-52" width="14" height="16" rx="2" transform="rotate(45)" /><rect x="-7" y="-52" width="14" height="16" rx="2" transform="rotate(-45)" />
+          <rect x="-7" y="36" width="14" height="16" rx="2" transform="rotate(45)" /><rect x="-7" y="36" width="14" height="16" rx="2" transform="rotate(-45)" />
+        </g>
+        <circle r="24" fill="#22262D" />
+      </g>
+      <!-- pernas articuladas (coxa + joelho + canela + pé) -->
+      <g stroke="url(#steelSide)" stroke-width="11" stroke-linecap="round" fill="none">
+        <path d="M104 162 L88 182 L94 206" />
+        <path d="M136 162 L152 182 L146 206" />
+      </g>
+      <g fill="url(#steel)" stroke="#2B2F36" stroke-width="2">
+        <circle cx="88" cy="182" r="7" /><circle cx="152" cy="182" r="7" />
+        <rect x="80" y="203" width="28" height="9" rx="3" /><rect x="132" y="203" width="28" height="9" rx="3" />
+      </g>
+      <!-- chassi blindado -->
+      <path d="M100 82 L140 82 L148 96 L148 156 L136 168 L104 168 L92 156 L92 96 Z" fill="url(#steelSide)" stroke="#2B2F36" stroke-width="3" stroke-linejoin="round" />
+      <path d="M100 96 L140 96" stroke="#5D646F" stroke-width="2" />
+      <path d="M100 150 L140 150" stroke="#5D646F" stroke-width="2" />
+      <g fill="#4A505A"><circle cx="99" cy="89" r="2.6" /><circle cx="141" cy="89" r="2.6" /><circle cx="99" cy="160" r="2.6" /><circle cx="141" cy="160" r="2.6" /></g>
+      <!-- núcleo (o "olho" do constructo) -->
+      <circle cx="120" cy="124" r="20" fill="url(#core)" />
+      <circle cx="120" cy="124" r="11" fill="#0E1116" stroke="url(#steel)" stroke-width="3" />
+      <circle cx="120" cy="124" r="5" fill="#7FE3FF" />
+      <!-- arco segmentado (placas com juntas) -->
+      <path d="M44 118 L66 92 L94 76 L120 70 L146 76 L174 92 L196 118" fill="none" stroke="url(#steel)" stroke-width="13" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M44 118 L66 92 L94 76 L120 70 L146 76 L174 92 L196 118" fill="none" stroke="#2B2F36" stroke-width="2" stroke-linejoin="round" opacity=".55" />
+      <g fill="#2B2F36"><circle cx="66" cy="92" r="3.5" /><circle cx="94" cy="76" r="3.5" /><circle cx="146" cy="76" r="3.5" /><circle cx="174" cy="92" r="3.5" /></g>
+      <!-- corda -->
+      <path d="M46 120 L120 146 L194 120" fill="none" stroke="#E6EAF0" stroke-width="3" stroke-linejoin="round" />
+      <!-- virote -->
+      <path d="M120 140 L120 44" stroke="#F4F6F9" stroke-width="6" stroke-linecap="round" />
+      <path d="M120 18 L135 48 L120 41 L105 48 Z" fill="url(#steel)" stroke="#2B2F36" stroke-width="2" stroke-linejoin="round" />
+      <!-- marcadores +1/+1 nas pontas e no topo -->
+      <g>
+        <circle cx="44" cy="118" r="11" fill="url(#core)" /><circle cx="196" cy="118" r="11" fill="url(#core)" />
+        <circle cx="44" cy="118" r="4" fill="#fff" /><circle cx="196" cy="118" r="4" fill="#fff" />
+        <circle cx="120" cy="12" r="7" fill="url(#core)" />
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div id="logo" class="logo">
+  <svg width="250" height="250"><use href="#emblem" /></svg>
+  <div>
+    <div class="word"><span class="a">COMBA</span><span class="b">LISTA</span></div>
+    <div class="tag">COMBOS DE MAGIC</div>
+  </div>
+</div>
+<div id="icone" class="icon"><svg width="512" height="512"><use href="#emblem" /></svg></div>
+
+<script>
+  // ?modo=logo mostra só o logo horizontal; ?modo=icone só o emblema
+  const modo = new URLSearchParams(location.search).get('modo') || 'logo';
+  document.getElementById(modo === 'icone' ? 'logo' : 'icone').remove();
+</script>
+</body>
+</html>

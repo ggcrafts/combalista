@@ -1,0 +1,10 @@
+node_modules
+.env
+output
+logs
+public/jobs
+data/cache
+fila
+public/sfx/memes
+data/history.json
+.claude/settings.local.json

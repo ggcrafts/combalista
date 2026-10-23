@@ -1,0 +1,15 @@
+{
+  "_comentario": "Vozes prontas para escolher no painel (ou TTS_VOZ no .env). provedor: cartesia. velocidade 0.6 a 1.5; volume 0.5 a 2.0; emocao: neutral, calm, happy, sad, content...",
+  "Garota": {
+    "provedor": "cartesia",
+    "voz": "cb2694c3-715f-4da9-99f3-1c974fff2928",
+    "velocidade": 1.5,
+    "volume": 1.2,
+    "emocao": "content"
+  },
+  "Narrador": {
+    "provedor": "cartesia",
+    "voz": "07b6f895-78b9-4921-8e10-8a21c99c2e8a",
+    "velocidade": 1.25
+  }
+}
